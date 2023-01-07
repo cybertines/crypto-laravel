@@ -1,0 +1,39 @@
+{
+    "name": "cryptotines/crypto-laravel",
+    "description": "Crypto payment gateway for BTC, TRX",
+    "require": {
+        "php": ">=8.0",
+        "ext-bcmath": "*",
+        "ext-json": "*",
+        "ext-gmp": "*",
+        "cryptotines/bitcoin-php": "1.0.x-dev",
+        "iexbase/tron-api": "^v5.0",
+        "lessmore92/php-ripple-binary-codec": "^1.0",
+        "lessmore92/php-ripple-keypairs": "^1.0",
+        "spatie/data-transfer-object": "^3.9",
+        "web3p/ethereum-tx": "^0.4.3",
+        "laravel/framework": ">=8",
+        "bensampo/laravel-enum": "^6.2"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.4.4",
+        "phpunit/phpunit": "^9.5.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\CryptoGatewayEngine\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\CryptoGatewayEngine\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "App\\CryptoGatewayEngine\\CryptoServiceProvider"
+            ]
+        }
+    }
+}

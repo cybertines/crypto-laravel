@@ -257,7 +257,7 @@ abstract class BitcoinFamilyTransaction extends AbstractTransaction
         $signer = new Signer($transaction);
 
         foreach ($utxos as $index => $utxo) {
-            $privateKey = (new PrivateKeyFactory(true))->fromWif($utxo->wallet->getPrivateKey());
+            $privateKey = (new PrivateKeyFactory())->fromWif($utxo->wallet->getPrivateKey());
 
             $txOut = new TransactionOutput(
                 $utxo->value,

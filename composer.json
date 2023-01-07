@@ -1,5 +1,5 @@
 {
-    "name": "cryptotines/crypto-laravel",
+    "name": "cybertines/crypto-laravel",
     "description": "Crypto payment gateway for BTC, TRX",
     "require": {
         "php": ">=8.0",

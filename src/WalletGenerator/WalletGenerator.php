@@ -79,7 +79,9 @@ class WalletGenerator
 
     protected function getFullPath(int $coin, int $pathNumber): string
     {
-        return 'm/44\'/' . $coin . '\'/0\'/0/' . $pathNumber;
+        
+        return '44\'/' . $coin . '\'/0\'/0/' . $pathNumber;
+//         return 'm/44\'/' . $coin . '\'/0\'/0/' . $pathNumber;
     }
 
     public function generate(CryptoCurrencyCoin $coin, string $mnemonic, int $pathNumber = 0, bool $isTest = false): WalletDto

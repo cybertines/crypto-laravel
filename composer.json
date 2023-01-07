@@ -6,7 +6,7 @@
         "ext-bcmath": "*",
         "ext-json": "*",
         "ext-gmp": "*",
-        "cryptotines/bitcoin": "*",
+        "cybertines/bitcoin": "dev-main",
         "iexbase/tron-api": "^v5.0",
         "lessmore92/php-ripple-binary-codec": "^1.0",
         "lessmore92/php-ripple-keypairs": "^1.0",
